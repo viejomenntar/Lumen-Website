@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Lato:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
+
+@theme {
+  --font-bitter: "Bitter", serif;
+  --font-space: "Space Mono", monospace;
+  --font-lato: "Lato", sans-serif;
+  
+  --color-lumen-purple: #a03eff;
+  --color-lumen-black: #0a0a0a;
+  --color-lumen-gray: #121212;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-lumen-black text-white font-lato antialiased selection:bg-lumen-purple/30;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bitter;
+  }
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+}
+
+.purple-glow {
+  box-shadow: 0 0 20px rgba(160, 62, 255, 0.2);
+}
+
+.purple-glow-hover:hover {
+  box-shadow: 0 0 30px rgba(160, 62, 255, 0.4);
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60;
+}
