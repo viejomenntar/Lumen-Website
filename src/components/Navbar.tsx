@@ -3,13 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import { LumenLogoText } from './Logo';
 
-const navLinks = [
-  { name: 'Inicio', href: '#' },
-  { name: 'Servicios', href: '#features' },
-  { name: '¿Quienes somos?', href: '#about' },
-  { name: 'Valores', href: '#products' },
-  { name: 'Contacto', href: '#contact' },
-];
+
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
