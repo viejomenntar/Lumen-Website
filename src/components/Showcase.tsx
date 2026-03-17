@@ -1,10 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ExternalLink } from 'lucide-react';
-import imgColaboracion from './assets/colaboracion.jpeg';
-import imgCreatividad from './assets/creatividad.png';
-import imgEstrategia from './assets/estrategia.png';
-import imgImpacto from './assets/impacto.png';
+
 
 const products = [
   {
